@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Agregar Compañia de bomberos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label position="floating">Id Compañia:</ion-label>
+    <ion-input name="idcomp"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Nombre:</ion-label>
+    <ion-input name="namecomp"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Direccion:</ion-label>
+    <ion-input name="direccioncomp"  autocomplete="address-line1"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Telefono:</ion-label>
+    <ion-input name="telefonocomp" autocomplete="tel-local"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Latitud:</ion-label>
+    <ion-input name="latitudcomp" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Longitud:</ion-label>
+    <ion-input name="longitudcomp"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="createCompania()">Crear Compañia</ion-button>
+  <ion-button expand="block" href="/home">Atras</ion-button>
+
+</ion-content>
